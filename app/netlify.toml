@@ -1,7 +1,7 @@
 [build]
-  base = "app/"
-  command = "npm run build"
-  publish = "build/client" # ปรับตามโครงสร้างของโปรเจกต์คุณ
+  base = "/"  # โฟลเดอร์หลักของโปรเจกต์ทั้งหมด
+  command = "cd app && npm run build"  # เข้าไปในโฟลเดอร์ app ก่อนแล้วค่อย build
+  publish = "build/client" 
   
 [functions]
   directory = "netlify/functions" 
