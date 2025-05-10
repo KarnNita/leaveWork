@@ -113,7 +113,7 @@ const formatLeaveRanges = (leaveDates: string[]) => {
 
       <div className="overflow-x-auto">
         <table className="min-w-full bg-[#F3F3E0] shadow rounded-xl">
-          <thead className="bg-[#27548A] bg-[#27548A] shadow rounded-xl">
+          <thead className="bg-[#27548A] shadow rounded-xl">
             <tr>
               <th className="px-6 py-3 text-left text-sm font-medium text-white">Employee ID</th>
               <th className="px-6 py-3 text-left text-sm font-medium text-white">Name</th>
