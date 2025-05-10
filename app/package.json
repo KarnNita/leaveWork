@@ -4,15 +4,13 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "scripts": {
-    "build": "remix vite:build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build/client",
-    "dev": "remix vite:dev",
-    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
-  },
+ "scripts": {
+  "build": "remix build && @netlify/remix-adapter",
+  "dev": "remix vite:dev",
+  "start": "remix-serve ./build/server/index.js",
+  "deploy": "gh-pages -d build/client"
+},
+
   "dependencies": {
     "@netlify/remix-adapter": "^2.6.1",
     "@remix-run/node": "^2.16.6",
