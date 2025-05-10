@@ -1,0 +1,7 @@
+[build]
+  base = "app/"
+  command = "npm run build"
+  publish = "build/client" # ปรับตามโครงสร้างของโปรเจกต์คุณ
+  
+[functions]
+  directory = "netlify/functions" 
